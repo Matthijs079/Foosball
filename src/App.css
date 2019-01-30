@@ -1,0 +1,142 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  background-color: #29a329;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.midline{
+  width: 100%;
+  height: 37px;
+  background-color: white;
+  margin: auto 0;
+}
+
+.round{
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: solid white 15px;
+  position: absolute;
+  top: 34%;
+  left: 42%;
+}
+
+.team{
+  background-color: darkgrey;
+  height: 200px;
+  width: 500px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.topleft{
+  border-left: solid white 15px;
+  top: 10%;
+  left: 10%;
+}
+
+.bottomleft{
+  border-left: solid white 15px;
+  bottom: 10%;
+  left: 10%;
+}
+
+.topright{
+  border-left: solid orange 15px;
+  top: 10%;
+  right: 10%;
+}
+
+.bottomright{
+  border-left: solid orange 15px;
+  bottom: 10%;
+  right: 10%;
+}
+
+.team__white{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.team__white-title{
+  font-size: 40px;
+}
+
+.input{
+  width: 300px;
+  padding: 10px;
+  font-size: 20px;
+  margin: 20px auto;
+}
+
+.button{
+  width: 150px;
+  height: 40px;
+  margin-left: 20px;
+  position: absolute;
+  bottom: 10px;
+  background-color: white; /* Green */
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.goal{
+  right: 35px;
+}
+
+.start{
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  position: absolute;
+  top: 48%;
+  left: 46%;
+  z-index: 20;
+}
+
+.gamecount{
+  font-size: 30px;
+  color: black;
+}
+
+.counter{
+  position: absolute;
+  top:40%;
+}
+
+.white{
+  left: 25%
+}
+
+.orange{
+  left: 75%;
+}
+
+.orangetext{
+  left: 64%;
+}
+
+.hoi{
+  width: 100vw;
+  height: 100vh;
+  position: absolute
+  z-index 20;
+}
