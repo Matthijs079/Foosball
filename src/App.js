@@ -1,32 +1,24 @@
 import React, { Component } from 'react';
 import './App.css';
-// import { Provider } from 'react-redux'
-// import store from './store'
-import UserOne from './components/userOne'
-import UserTwo from './components/userTwo'
-import UserThree from './components/userThree'
-import UserFour from './components/userFour'
+import User from './components/user'
 import Newgame from './components/startGame'
-import OrangeScore from './components/orangeCount'
-import WhiteScore from './components/whiteCount'
+import Score from './components/score'
 
 class App extends Component {
 
   render() {
     return (
-      // <Provider store={store}>
         <div className="App">
-            <UserOne />
-            <UserTwo />
+            <User user="one"/>
+            <User user="two"/>
+            <User user="three"/>
+            <User user="four"/>
             <Newgame />
-            <OrangeScore />
-            <WhiteScore />
+            <Score color="Orange"/>
+            <Score color="White"/>
             <div className="round"></div>
             <div className="midline"></div>
-            <UserThree />
-            <UserFour />
         </div>
-      // </Provider>
     );
   }
 }

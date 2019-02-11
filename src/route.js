@@ -1,20 +1,20 @@
 import React from 'react'
 import { Provider } from 'react-redux'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import store from './store'
 import Stats from './components/stats'
+import NotFound from './components/404'
 import App from './App';
 
 const Root = () => (
   <Provider store={store}>
-   <Router>
-        <Route path="/" component={App} />
-    </Router>
-	  <Router>
-      <Route path="/stats" component={Stats} />
-    </Router>
+        <Switch>
+          <Route exact path="/" component={App} />
+          <Route exact path="/stats" component={Stats} />
+          <Route path="*" component={NotFound} />
+        </Switch>
   </Provider>
 )
 
 
-export default Root
+export default (Root)
